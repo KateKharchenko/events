@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 10px;
+	font-family: Poppins, Arial, sans-serif;
+	color: #444444;
+}
+
+body {
+	min-height: 100%;
+	font-size: 2.2rem;
+	margin: 0;
+}
+
+.container {
+	max-width: 1140px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.container--sm {
+	max-width: 710px;
+}
+
+footer {
+	padding: 6rem 0;
+}
+
+h1 {
+	font-size: 6.4rem;
+	margin:  3rem 0;
+}
+
+h2 {
+	font-size: 6.2rem;
+}
+
+#about h2 {
+	color: #e71cb4;
+}
+
+h3 {
+	font-size: 3.6rem;
+}
+
+#about h3,
+#about h4 {
+	margin-top: 4em;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
+.section {
+	padding: 11rem 0;
+}
+
+.section--cover {
+	background-position: center;
+	background-size: cover;
+	background-color: #0e0d1b;
+	color: 	#fff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section--cover h1 + p {
+	margin: 0 0 4em;
+	font-size: 3rem;
+}
+
+/* BUTTONS */
+.btn {
+	display: inline-block;
+	color: #fff;
+	border: 2px solid #c60ebe;
+	background-color: #c60ebe;
+	text-align: center;
+	font-size: 2.2rem;
+	border-radius: .7em;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 1em 1.5em;
+	transition: all .4s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	color: #c60ebe;
+	background-color: transparent;
+	outline: none;
+}
+
+.btn--transparent {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn--transparent:hover,
+.btn--transparent:focus,
+.btn--transparent:active {
+	color: #0e0d1b;
+	background-color: #fff;
+}
+
+.btn--small {
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	transition: all .4s ease-in-out;
+	font-weight: 700;
+}
+
+header a:hover,
+header a:focus,
+header a:active {
+	color: #c60ebe;
+}
+
+nav a {
+	border-bottom: 2px solid transparent;
+	font-size: 1.6rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	border-color: #c60ebe;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 2em;
+}
+
+.logo {
+	font-size: 3.4rem;
+}
+
+
+.items {
+	padding: 0;
+	column-count: 2;
+	list-style: none;
+	font-weight: 500;
+}
+
+.item {
+	font-size: 0;
+	margin-bottom: 6rem;
+}
+
+.item__index,
+.item__text {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item__index {
+	width: 35%;
+	font-size: 4.4rem;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: .5em;
+	color: #ffde16;
+}
+
+.item__index--pink {
+	color: #ffbd9e;
+}
+
+.item__index--blue {
+	color: #20c9e0;
+}
+
+.item__index--green {
+	color: #2eac66;
+}
+
+.item__index--purple {
+	color: #ff6179;
+}
+
+
+.item__index::before {
+	content: "\f054";
+	font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: .8em;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 25%;
+}
+
+.item__text {
+	width: 65%;
+	font-size: 2.2rem;
+	min-height: 6.7rem;
+}
+
+#competitors {
+	background-color: #333399;
+	background-image: linear-gradient(to bottom, #333399 0%, #333399 50%, #fe00cc 100%);
+	color:  #fff;
+}
+
+.persons {
+	padding: 0;
+	font-size: 0;
+}
+
+.person {
+	display: inline-block;
+	width: 33.3%;
+	padding: 2rem 6.5rem;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.person--jury {
+	padding: 2rem 3rem;
+} 
+
+.person__img-wrap {
+	width: 100%;
+	padding-top: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+}
+
+.person__img-wrap--round {
+	border-radius: 100%;	
+}
+
+.person__image {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.person__name {
+	font-size: 2.4rem;
+	margin: 1em 0;
+	line-height: 1;
+	max-height: 2.4rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	transition: all .4s ease;
+} 
+
+.person__name-wrap {
+	position: relative;
+}
+
+.person__name-wrap::before {
+	content: attr(data-fulltext);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width:  100%;
+	background-color: #fff;
+	color: #ccc;
+	font-style: italic;
+	opacity: 0;
+	transition: all .4s linear;
+}
+
+.person__name-wrap:hover::before {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.person__text {
+
+}
+
+.countdown {}
+
+.countdown__item {
+	display: inline-block;
+	border:  1px solid rgba(255,255,255, .4);
+	padding: 30px 10px;
+	width: 165px;
+	height: 165px;
+	margin: 2.5%;
+}
+
+.countdown__item:not(:first-of-type) {
+	background-color: rgba(0,0,0, .5);
+	border-color: rgba(0,0,0, .5);
+}
+
+.countdown__number {
+	font-weight: bold;
+	font-size: 7.1rem;
+	line-height: 1;
+}
+
+.countdown__text {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+.sponsors {
+	padding: 0;
+}
+
+.sponsors li {
+	display: inline-block;
+}
+
+.sponsors img {
+	height: 90px;
+	opacity: .5;
+}
+
+#jury {
+	background-color: #ffe9eb;
+}
+
+footer {
+	background-color: #eee;
+}
+
+.newsletter input {
+	display: inline-block;
+	border: 2px solid #fff;
+	font-size: 1.8rem;
+	border-radius: .7em;
+	padding: 1em 1.5em;
+	transition: all .4s ease-in-out;
+	width: 400px;
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+.newsletter input:focus {
+	border: 2px solid #c60ebe;
+	outline: 0;
+}
+
+.newsletter input::placeholder {
+	transition: all .4s ease-in-out;
+}
+
+.newsletter input:focus::placeholder {
+	text-indent: 100%;
+}
+
+.newsletter button {
+	margin-bottom: 1em;
+}
+
+.socials {
+	padding: 0;
+	text-align: center;
+	margin-top: 6.5rem;
+}
+
+.social {
+	display: inline-block;
+}
+
+.social__link {
+	display: inline-block;
+	text-decoration: none;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: #dedede;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 65px;
+	transition: all .4s ease-in;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+	color: #333;
+}
+
+.form {
+	padding: 50px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form__group {
+	width: 47%;
+}
+
+.form__group--lg {
+	width: 100%;
+}
+
+.form__input {
+	font-family: Poppins, Arial, sans-serif;
+	border: none;
+	border-bottom: 1px solid #333;
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	outline: none;
+	font-size: 1.2rem;
+	background-image: linear-gradient(to top, #333 0, #333 4px, transparent 4px);
+}
+
+.form__input:focus {
+	background-image: none;
+}
+
+.form__label {
+	padding: 15px 0;
+	font-size: 1.2rem;
+	display: block;
+	width: 100%;
+	transition: transform .5s linear;
+	transform: translate(0, -100%);
+}
+
+.form__input:focus + .form__label,
+.form__input:valid + .form__label {
+	transform: translate(0, 0);
+}
+
+textarea.form__input {
+	height: 150px;
+}
+
+.form__btn {
+	color: #fff;
+	padding: 20px;
+	background-color: #555;
+	text-transform: uppercase;
+	border: 2px solid #555;
+	transition: all .5s linear;
+}
+
+.form__btn:hover,
+.form__btn:focus,
+.form__btn:active {
+	color: #555;
+	background-color: #fff;
+}
+
+.form__btns {
+	text-align: right;
+	width: 100%;
+}
+
+
+/* HELPERS */
+.text-center {
+	text-align: center;
+}
+
+
+.text-large {
+	font-size: 1.5em;
+}
+
+.text-small {
+	font-size: .65em;
+}
+
+.mb-large {
+	margin-bottom: 5rem;
+}
+
+.sp-socials {
+	padding: 0;
+	text-align: center;
+	margin-top: 6.5rem;
+}
+
+.sp-social {
+	display: inline-block;
+}
+
+.sp-social__link {
+	display: inline-block;
+	text-decoration: none;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: #dedede;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 65px;
+	transition: all .4s ease-in;
+	background-image: url(../img/icons.png);
+}
+
+.sp-social__link--fb {
+	background-position: -94px -94px;
+}
+.sp-social__link--tw {
+	background-position: -94px -10px;
+}
+.sp-social__link--dr {
+	background-position: -10px -94px;
+}
+.sp-social__link--pi {
+	background-position: -10px -10px;
+}
+
+.sp-social__link:hover,
+.sp-social__link:focus,
+.sp-social__link:active {
+	transform: scale(.9);
+}

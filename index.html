@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="description" content="">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">Event</a>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#jury">Jury</a></li>
+					<li><a href="#competitors">Competitors</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="section section--cover text-center" style="background-image: linear-gradient(to top, rgba(14,13,17, .4), rgba(14,13,17, .4)), url(img/cover.jpg)">
+			<div class="container">
+				<h1>Are you ready for the Battle?</h1>
+				<p>The clash between graphic designers</p>
+				<a href="#" target="_blank" class="btn btn--transparent">Download Our Case Study</a>
+			</div>
+		</section>
+		<section class="section" id="about">
+			<div class="container">
+				<h2>Design Battles</h2>
+				<div class="text-large">
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+				</div>
+
+				<h3>What is the course of the Battles?</h3>
+				<ul class="items">
+					<li class="item">
+						<span class="item__index">01.</span>
+						<span class="item__text">Cras ultricies ligula sed mag.</span>
+					</li>
+					<li class="item">
+						<span class="item__index item__index--pink">02.</span>
+						<span class="item__text">Pellentesque in ipsum id orci porta dapibus.</span>
+					</li>
+					<li class="item">
+						<span class="item__index item__index--blue">03.</span>
+						<span class="item__text">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span>
+					</li>
+					<li class="item">
+						<span class="item__index item__index--green">04.</span>
+						<span class="item__text">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span>
+					</li>
+					<li class="item">
+						<span class="item__index item__index--purple">05.</span>
+						<span class="item__text">Proin eget tortor risus. </span>
+					</li>
+					<li class="item">
+						<span class="item__index">06.</span>
+						<span class="item__text">Nulla quis lorem ut libero malesuada feugiat.</span>
+					</li>
+				</ul>
+
+				<div class="">
+					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+				</div>
+
+				<h4>Submissions starts on 10/12/2017 and end on 11/12/2017</h4>
+
+				<div class="text-small mb-large">
+					<p>Nulla quis lorem ut libero malesuada feugiat eget tincidunt nibh pulvinar.</p>
+				</div>
+
+				<a href="#" class="btn">Download Our Case Study</a>
+			</div>
+		</section>
+		<section class="section" id="competitors">
+			<div class="container">
+				<div class="text-center">
+					<h2>They already said Battles</h2>
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Estibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+				</div>
+				<ul class="persons" id="competitor_list"></ul>
+
+				<div class="text-center">
+					<h2>Countdown</h2>
+					<div class="countdown">
+						<div class="countdown__item">
+							<div id="days" class="countdown__number">37</div>
+							<div class="countdown__text">days</div>
+						</div>
+						<div class="countdown__item">
+							<div  id="hours" class="countdown__number">13</div>
+							<div class="countdown__text">hours</div>
+						</div>
+						<div class="countdown__item">
+							<div  id="minutes" class="countdown__number">45</div>
+							<div class="countdown__text">minutes</div>
+						</div>
+						<div class="countdown__item">
+							<div  id="seconds" class="countdown__number">26</div>
+							<div class="countdown__text">seconds</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section text-center">
+			<div class="container">
+				<h2>Sponsorship</h2>
+				<ul class="sponsors">
+					<li><img src="img/clients1.png" alt=""></li>
+					<li><img src="img/clients2.png" alt=""></li>
+					<li><img src="img/clients3.png" alt=""></li>
+					<li><img src="img/clients4.png" alt=""></li>
+				</ul>
+			</div>
+		</section>
+		<section class="section text-center" id="jury">
+			<div class="container">
+				<h2>Jury 2017</h2>
+				<ul class="persons" id="persons"></ul>
+			</div>
+		</section>
+		<section class="section" id="contact">
+			<div class="container container--sm">
+				<div class="text-center">
+					<h2>Contact Us</h2>
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+				</div>
+				<form action="" class="form">
+					<div class="form__group">
+						<input type="text" class="form__input" id="firstname" name="firstname" required>
+						<label for="firstname" class="form__label">First name</label>
+					</div>
+					<div class="form__group">
+						<input type="text" class="form__input" id="lastname" name="lastname" required>
+						<label for="lastname" class="form__label">Last name</label>
+					</div>
+					<div class="form__group">
+						<input type="email" class="form__input" id="email" name="email" required>
+						<label for="email" class="form__label">Email</label>
+					</div>
+					<div class="form__group">
+						<input type="url" class="form__input" id="website" name="website" required>
+						<label for="website" class="form__label">Website</label>
+					</div>
+					<div class="form__group form__group--lg">
+						<textarea class="form__input" name="message" id="message" required></textarea>
+						<label for="message" class="form__label">Message</label>
+					</div>
+					<div class="form__btns">
+						<button class="form__btn">send message</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="text-center">
+		<div class="container">
+			<h3>Newsletter</h3>
+			<p class="text-small">If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
+			<form action="" name="newsletter" class="newsletter">
+				<input type="email" required placeholder="email address">
+				<button class="btn btn--small">subscribe</button>
+			</form>
+			<ul class="socials">
+				<li class="social">
+					<a href="#" class="social__link">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="#" class="social__link">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="#" class="social__link">
+						<i class="fab fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="#" class="social__link">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="sp-socials">
+				<li class="sp-social">
+					<a href="#" class="sp-social__link sp-social__link--fb"></a>
+				</li>
+				<li class="sp-social">
+					<a href="#" class="sp-social__link sp-social__link--tw"></a>
+				</li>
+				<li class="sp-social">
+					<a href="#" class="sp-social__link sp-social__link--dr"></a>
+				</li>
+				<li class="sp-social">
+					<a href="#" class="sp-social__link sp-social__link--pi"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
